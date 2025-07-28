@@ -40,9 +40,9 @@ export default function CustomizerPage() {
       });
 
       if (res.ok) {
-        alert('✅ Commande envoyée avec succès !');
+        alert('✅ Order has been sent successfully !');
       } else {
-        alert('❌ Erreur lors de l’envoi de la commande.');
+        alert('❌ Erreur has occured.');
       }
     } catch (err) {
       console.error(err);
@@ -74,9 +74,9 @@ export default function CustomizerPage() {
       quantity: 1,
     };
 
-    console.log("🧤 Objet ajouté au panier :", JSON.stringify(item, null, 2));
+    console.log("🧤 Order added to Cart :", JSON.stringify(item, null, 2));
     addCartItem(item);
-    alert('✅ Gant ajouté au panier !');
+    alert('✅ Glove added to Cart !');
     navigate('/cart');
   };
 
@@ -135,14 +135,14 @@ export default function CustomizerPage() {
             onClick={handleAddToCart}
             className="w-full bg-yellow-500 hover:bg-yellow-400 text-black py-3 rounded-lg font-bold text-lg transition"
           >
-            Ajouter au panier
+            Add To Cart
           </button>
 
           <button 
             onClick={handleBuy}
             className="w-full bg-green-600 hover:bg-green-500 text-white py-3 rounded-lg font-bold text-lg transition"
           >
-            Commander maintenant
+            Order Now
           </button>
         </div>
       </div>
