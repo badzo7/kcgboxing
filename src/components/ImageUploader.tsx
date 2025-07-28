@@ -10,7 +10,7 @@ type AvailableZone = typeof AVAILABLE_ZONES[number];
 const ZONE_LABELS: Record<AvailableZone, string> = {
   OutterPalm: 'Outer Palm',
   OutterThumb: 'Outer Thumb',
-  WristOutline: 'Wrist Outline'
+  WristOutline: 'Strap'
 };
 
 export default function ImageUploader() {
